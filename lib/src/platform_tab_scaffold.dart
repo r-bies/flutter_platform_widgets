@@ -228,7 +228,7 @@ class PlatformTabScaffold extends PlatformWidgetBase<Widget, Widget> {
 
     final platformNavBar = PlatformNavBar(
       items: items,
-      backgroundColor: Color.fromRGBO(0, 255, 255, 1.0),
+      backgroundColor: Color.fromRGBO(255, 0, 255, 1.0),  // Androidのタブカラー
       currentIndex: index,
       material: materialTabs,
       itemChanged: (int index) {
@@ -307,7 +307,7 @@ class PlatformTabScaffold extends PlatformWidgetBase<Widget, Widget> {
   ) {
     final navBar = PlatformNavBar(
       items: items,
-      backgroundColor: Color.fromRGBO(0, 255, 0, 1.0),
+      backgroundColor: Color.fromRGBO(255, 0, 0, 1.0),  // iOSのタブカラー
       currentIndex: currentIndex,
       itemChanged: itemChanged,
       cupertino: cupertinoTabs,
