@@ -318,7 +318,7 @@ class PlatformTabScaffold extends PlatformWidgetBase<Widget, Widget> {
       key: widgetKey,
       tabBar: tabBar,
       controller: controller,
-      backgroundColor: Color.fromRGBO(0, 0, 255, 1.0),
+      backgroundColor: data?.tabsBackgroundColor,
       resizeToAvoidBottomInset: data?.resizeToAvoidBottomInset ?? true,
       tabBuilder: (context, index) {
         if (data == null || data.useCupertinoTabView) {
@@ -381,7 +381,7 @@ class PlatformTabScaffold extends PlatformWidgetBase<Widget, Widget> {
       //key
       navigationBar: appBar,
       child: iosContentPad(context, child, appBar, tabBar),
-      backgroundColor: Color.fromRGBO(0, 0, 0, 1.0),
+      backgroundColor: data?.backgroundColor ?? pageBackgroundColor,
       resizeToAvoidBottomInset: data?.resizeToAvoidBottomInset ?? true,
     );
   }
